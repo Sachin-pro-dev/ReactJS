@@ -1,0 +1,31 @@
+.header {
+  flex: 1;
+  background: var(--bg-color-1);
+  padding: 20px;
+  overflow-y: scroll;
+}
+.header p {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: var(--text-color-1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_expression {
+  overflow-x: scroll;
+  width: 100%;
+  min-height: 30px;
+}
+.header_expression p {
+  white-space: nowrap;
+  min-width: 100%;
+  width: fit-content;
+  font-weight: bolder;
+  /* font-size: 1.1rem; */
+}
+.header_result {
+  font-weight: bold;
+  font-size: 1.3rem !important;
+  min-height: 30px;
+}

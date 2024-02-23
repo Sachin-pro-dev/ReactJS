@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&family=Orbitron&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Galada", cursive;
+  /* font-family: "Orbitron", sans-serif; */
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 6rem;
+}
+body {
+  background: #000;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.app:before {
+  content: "";
+  background: url("./assets/weatherbg2.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+.location lord-icon {
+  transform: translateY(15px);
+  animation: rotate 2s ease-in-out infinite;
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.app input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.app input {
+  filter: drop-shadow(1px 1px 5px violet);
+}
+.app input:focus {
+  filter: drop-shadow(1px 1px 5px aqua);
+}
+.app input::-webkit-input-placeholder {
+  transform: scale(120%) translateX(20npm run devpx);
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+.container {
+  /* height: 100%; */
+  /* max-width: 700px; */
+  /* height: 700px; */
+  /* margin: auto; */
+  padding: 0 1rem;
+  position: relative;
+  /* top: 10%; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+.app .top {
+  width: 100%;
+  /* margin: 1rem auto; */
+  margin: 0 10px;
+}
+.app .temp h1 {
+  filter: drop-shadow(2px 2px 10px skyblue);
+  font-size: 105px;
+  animation: anime 2s ease infinite;
+}
+@keyframes anime {
+  25% {
+    filter: drop-shadow(2px 2px 10px aqua);
+  }
+  50% {
+    filter: drop-shadow(2px 2px 10px white);
+  }
+}
+.app .description {
+  position: relative;
+  right: -92%;
+  top: -80px;
+  writing-mode: vertical-rl;
+}
+.app .description p {
+  font-size: 40px;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  /* margin: 1rem auto; */
+  position: relative;
+  bottom: -100px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.app .bottom:hover {
+  /* box-shadow: 2px 2px 15px aqua; */
+  filter: drop-shadow(1px 1px 5px aqua);
+}
+.bold {
+  font-weight: 700;
+}

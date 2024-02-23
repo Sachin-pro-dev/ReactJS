@@ -1,0 +1,18 @@
+body {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+button {
+  padding: 6px;
+}
+input[type="text"] {
+  margin: 0px 5px;
+  padding: 6px;
+}

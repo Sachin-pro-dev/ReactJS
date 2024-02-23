@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: "Rubki", "segoe ui", "roboto", "oxygen";
+  background: #26272b;
+  color: #f4f4f4;
+}
+
+a {
+  color: #f4fff4;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+canvas#canvas {
+  /* display: block; */
+  height: 100px;
+  width: 100%;
+  background: #26272b;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+}

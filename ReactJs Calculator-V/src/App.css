@@ -1,0 +1,91 @@
+.app {
+  --bg-color-1: #9db3ed;
+  --bg-color-2: #f9f9f9;
+  --text-color-1: #0b1537;
+  --text-color-2: #636363;
+}
+.app[data-theme="dark"] {
+  --bg-color-1: #172d67;
+  --bg-color-2: #050c36;
+  --text-color-1: #fbfcfc;
+  --text-color-2: #bbbcbc;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.14);
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: gray;
+  background: linear-gradient(to bottom, #ff850a, #ff3474);
+}
+
+.app {
+  background: #2a6c84;
+  background: linear-gradient(#2a6c84, #94cce1);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app_calculator {
+  height: 500px;
+  width: 280px;
+  border-radius: 30px;
+  box-shadow: 1px -1px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.app_calculator_navbar {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  width: 80px;
+  border-bottom-right-radius: 30px;
+  min-height: 40px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_calculator_navbar_toogle {
+  height: 15px;
+  width: 30px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 40px 80px rgba(0, 0, 0, 0.14);
+}
+.app_calculator_navbar_toogle_circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 300ms;
+}
+
+.app_calculator_navbar_toogle_circle_active {
+  margin-left: 15px;
+}
+
+.sun-icon {
+  height: 20px;
+  color: white;
+  width: 20px;
+}
+.moon-icon {
+  color: rgb(214, 214, 214);
+  height: 20px;
+  width: 20px;
+}

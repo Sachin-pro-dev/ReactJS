@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: transparent;
+  margin: 0 70px;
+  font-style: italic;
+}
+
+.icon {
+  font-size: 2rem;
+  /* color: #6900ff; */
+  color: aqua;
+}
+
+.purple {
+  /* color: #6900ff; */
+  color: aqua;
+}
+
+lord-icon,
+.coin-logo {
+  transform: scale(1.3);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px aqua);
+}

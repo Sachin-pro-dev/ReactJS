@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(pink, aqua, purple, violet);
+  background: conic-gradient(white, aqua, black, white, green, black, white);
+}
+.color-box {
+  height: 250px;
+  width: 250px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-radius: 50%;
+}
+.color-input {
+  margin: 20px;
+  height: 30px;
+  border-radius: 50px;
+  border: 0.5px solid grey;
+}
+.color-input::placeholder {
+  text-align: center;
+}
+.color-input:focus {
+  box-shadow: 1px 1px 10px 1px aqua;
+}
